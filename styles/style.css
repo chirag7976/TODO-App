@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #191D2B;
+  font-size: 19px;
+  color: #fff;
+}
+
+.main-container {
+  background-color:#374954;
+  width: 80%;
+  margin: 0 auto;
+  height: 90vh;
+  /* height: 848px; */
+  border-radius: 15px;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+ .main-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.main-container::-webkit-scrollbar-track {
+  background: #C4C4C4;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(179.75deg, #EB5757 -12.26%, #4F6877 55.88%);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+header .todo-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .todo-form input {
+  filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.25));
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background: #4f6877;
+  border-radius: 15px;
+  padding: .7rem 2rem;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  transition: all .4s ease-in-out;
+}
+
+header .todo-form input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .todo-form input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .todo-form input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .todo-form input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .todo-form button {
+  background-color: #0ea340;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  padding: .7rem 2rem;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  align-self: flex-start;
+  margin: 1rem 0;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+header .todo-form button:hover {
+  background-color: #4F6877;
+  color: #0ea340;
+}
+
+header .search-form {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+header .search-form input {
+  filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.25));
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background: #4f6877;
+  border-radius: 15px;
+  padding: .7rem 2rem;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  transition: all .4s ease-in-out;
+}
+
+header .search-form input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .search-form input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .search-form input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+header .search-form input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .todo-item {
+  background-color: #4F6877;
+  filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.25));
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+main .completed span {
+  text-decoration: line-through;
+  color: #0ea340;
+}
+
+main .completed span, main .completed i {
+  opacity: 0.8;
+}
+
+i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+i:hover {
+  color: #E74C3C;
+}
